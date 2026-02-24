@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,18 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">ComIT</a>
+            <a class="navbar-brand" href="#">icon Instagram</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -24,18 +27,40 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                     <button type="button" class="btn btn-success">Success</button>
-                    <!-- Large button groups (default and split) -->
-<div class="btn-group">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#mi-modal-1">Crea un nuevo post</button>
+
+<div class="modal" tabindex="-1" id="mi-modal-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Título del Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Large button
-    </button>
-    <ul class="dropdown-menu">
-        ...
-    </ul>
+            <div class="modal-body">
+                <p>Cuerpo del texto del Modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+                    <!-- Large button groups (default and split) -->
+                    <div class="btn-group">
+                    </div>
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        icon
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                    </div>
                     <!--<li class="nav-item">
                         <a class="nav-link active" href="#">Inicio</a>
                     </li>
@@ -48,11 +73,38 @@
                 </ul>
         </div>
     </nav>
+<!-- Sección principal -->
+ <div class="container-principal">
+    <ul class="icon-1" style="list-style: none; display: flex; gap: 10px; padding: 0; margin: 20px 0; justify-content: center;">
+    <i class="bi bi-grid-3x3"></i>
+    <i class="bi bi-app"></i>
+    </ul>
+<div class="card mb-3">
+    <h5 class="card-title">Puppy Shitzu</h5>
+    <img src="https://static.wixstatic.com/media/aa8751_1aa95fd67b9e4f13850e5de823d7fb5c~mv2.jpg/v1/fill/w_520,h_706,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aa8751_1aa95fd67b9e4f13850e5de823d7fb5c~mv2.jpg"
+        class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="https://static.wixstatic.com/media/aa8751_1aa95fd67b9e4f13850e5de823d7fb5c~mv2.jpg/v1/fill/w_520,h_706,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aa8751_1aa95fd67b9e4f13850e5de823d7fb5c~mv2.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card">
+    <img src="https://assets.isu.pub/document-structure/201127075218-eea76b976de7b8a66af37cd950dbbd4d/v1/663b0529822f70a77bda27c069ed0afd.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+  </div>
+  </div>
+</div>
 
     <!-- Sección principal -->
-
-    
-    <section class="py-5">
+    <!--<section class="py-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4">
@@ -69,11 +121,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+    
+    </body>
+    
+    </html>
